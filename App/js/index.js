@@ -21,64 +21,8 @@ xui.Class('App', 'xui.Module',{
             var host=this, children=[], append=function(child){children.push(child.get(0));};
             
             append(
-                xui.create("xui.UI.PopMenu")
-                .setHost(host,"xui_ui_popmenu4")
-                .setItems([
-                    {
-                        "id" : "a",
-                        "caption" : "item 1",
-                        "imageClass" : "xui-icon-number1"
-                    },
-                    {
-                        "id" : "b",
-                        "caption" : "item 2",
-                        "imageClass" : "xui-icon-number2"
-                    },
-                    {
-                        "id" : "c",
-                        "caption" : "item 3",
-                        "imageClass" : "xui-icon-number3"
-                    },
-                    {
-                        "id" : "d",
-                        "caption" : "item 4",
-                        "imageClass" : "xui-icon-number4",
-                        "disabled" : true
-                    }
-                ])
-            );
-            
-            append(
-                xui.create("xui.UI.PopMenu")
-                .setHost(host,"xui_ui_popmenu5")
-                .setItems([
-                    {
-                        "id" : "a",
-                        "caption" : "item 1",
-                        "imageClass" : "xui-icon-number1"
-                    },
-                    {
-                        "id" : "b",
-                        "caption" : "item 2",
-                        "imageClass" : "xui-icon-number2"
-                    },
-                    {
-                        "id" : "c",
-                        "caption" : "item 3",
-                        "imageClass" : "xui-icon-number3"
-                    },
-                    {
-                        "id" : "d",
-                        "caption" : "item 4",
-                        "imageClass" : "xui-icon-number4",
-                        "disabled" : true
-                    }
-                ])
-            );
-            
-            append(
                 xui.create("xui.UI.MenuBar")
-                .setHost(host,"xui_ui_menubar2")
+                .setHost(host,"xui_ui_menubar3")
                 .setItems([
                     {
                         "id" : "menu1",
@@ -147,7 +91,7 @@ xui.Class('App', 'xui.Module',{
                         "caption" : "menu2"
                     }
                 ])
-                .setTop("20.571428571428573em")
+                .setTop("21.333333333333332em")
             );
             
             return children;
