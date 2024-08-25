@@ -19,7 +19,137 @@ xui.Class('App', 'xui.Module',{
         iniComponents : function(){
             // [[Code created by CrossUI RAD Studio
             var host=this, children=[], append=function(child){children.push(child.get(0));};
-
+            
+            append(
+                xui.create("xui.UI.PopMenu")
+                .setHost(host,"xui_ui_popmenu4")
+                .setItems([
+                    {
+                        "id" : "a",
+                        "caption" : "item 1",
+                        "imageClass" : "xui-icon-number1"
+                    },
+                    {
+                        "id" : "b",
+                        "caption" : "item 2",
+                        "imageClass" : "xui-icon-number2"
+                    },
+                    {
+                        "id" : "c",
+                        "caption" : "item 3",
+                        "imageClass" : "xui-icon-number3"
+                    },
+                    {
+                        "id" : "d",
+                        "caption" : "item 4",
+                        "imageClass" : "xui-icon-number4",
+                        "disabled" : true
+                    }
+                ])
+            );
+            
+            append(
+                xui.create("xui.UI.PopMenu")
+                .setHost(host,"xui_ui_popmenu5")
+                .setItems([
+                    {
+                        "id" : "a",
+                        "caption" : "item 1",
+                        "imageClass" : "xui-icon-number1"
+                    },
+                    {
+                        "id" : "b",
+                        "caption" : "item 2",
+                        "imageClass" : "xui-icon-number2"
+                    },
+                    {
+                        "id" : "c",
+                        "caption" : "item 3",
+                        "imageClass" : "xui-icon-number3"
+                    },
+                    {
+                        "id" : "d",
+                        "caption" : "item 4",
+                        "imageClass" : "xui-icon-number4",
+                        "disabled" : true
+                    }
+                ])
+            );
+            
+            append(
+                xui.create("xui.UI.MenuBar")
+                .setHost(host,"xui_ui_menubar2")
+                .setItems([
+                    {
+                        "id" : "menu1",
+                        "sub" : [
+                            {
+                                "id" : "normal",
+                                "caption" : "normal"
+                            },
+                            {
+                                "id" : "disabled",
+                                "caption" : "disabled",
+                                "disabled" : true
+                            },
+                            {
+                                "id" : "image",
+                                "caption" : "image",
+                                "imageClass" : "xui-icon-xui"
+                            },
+                            {
+                                "type" : "split"
+                            },
+                            {
+                                "id" : "checkbox 1",
+                                "caption" : "checkbox 1",
+                                "type" : "checkbox"
+                            },
+                            {
+                                "id" : "checkbox 2",
+                                "caption" : "checkbox 2",
+                                "type" : "checkbox"
+                            }
+                        ],
+                        "caption" : "menu1"
+                    },
+                    {
+                        "id" : "menu2",
+                        "sub" : [
+                            {
+                                "id" : "sub menu 1",
+                                "caption" : "sub menu 1",
+                                "add" : "[Ctrl+F]",
+                                "sub" : [
+                                    {
+                                        "id" : "sub 1",
+                                        "type" : "radiobox"
+                                    },
+                                    {
+                                        "id" : "sub 2",
+                                        "type" : "radiobox"
+                                    },
+                                    {
+                                        "id" : "sub 3"
+                                    }
+                                ]
+                            },
+                            {
+                                "id" : "sub menu 2",
+                                "caption" : "sub menu 2",
+                                "add" : "[Ctrl+T]",
+                                "sub" : [
+                                    "sub 3",
+                                    "sub 4"
+                                ]
+                            }
+                        ],
+                        "caption" : "menu2"
+                    }
+                ])
+                .setTop("20.571428571428573em")
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
